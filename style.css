@@ -1,0 +1,289 @@
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ }
+html{
+	scroll-behavior: smooth;
+}
+
+/*CLASSES*/
+.container{
+ 	display: flex;
+ 	flex-direction: center;
+ 	justify-content: center;
+ }
+
+.btnBlue{
+ 	text-decoration: none;
+ 	color: #fff;
+ 	padding: 0.6rem 1.5rem;
+ 	background: #df0020;
+ 	font-size: 14px;
+ 	border-radius: 5rem;
+ 	/*transition: 0.5s;*/
+ }
+.hr{
+	margin: 1rem 48%;
+	border: solid 2px #fff;
+	margin-bottom: 3rem;
+}
+.center{
+	text-align: center;
+}
+
+.worksGrid:hover{
+	background-color: #121212;
+	color: #fff;
+	transition: 0.3s;
+}
+.worksGrid{
+	background: #dcdcdc;
+	transition: 0.5s;
+	text-align: center;
+	margin: 0 2rem;
+	padding: 0.5rem;
+	border-radius: 30px;
+	font-family: sans-serif;
+}
+.worksGrid img{
+	width: 100%
+}
+.conGrid{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	justify-content: space-between;
+}
+h4{
+	margin-bottom: 1rem;
+}
+
+/*BARRA DE NAVEGACION*/
+ #nav{
+ 	padding: 1rem;
+ 	background: #fff;
+ 	text-align: right;
+ 	margin-right: 5rem;
+ 	position: fixed;
+ 	width: 100%
+ }
+ #nav a{
+ 	margin-right: 2rem;
+ 	text-decoration: none;
+ 	color: #000;
+ 	font-family: sans-serif;
+ 	font-size: 12px;
+ 	padding: 0.5rem 1.5rem;
+ 	border-radius: 20px;
+ 	transition: 0.5s;
+ }
+ #nav a:hover{
+ 	background: #df0020;
+ 	color: #fff;
+ 	transition: 0.5s;
+ }
+
+ /*HEADER*/
+
+ #conHeader{
+ 	background: #fff;
+ 	padding: 8rem;
+ }
+
+ #headLeft{
+ 	margin-left: 1rem;
+ 	margin-top: 0;
+ }
+  #headLeft img{
+  	width: 250px;
+ 	border-radius: 100%;
+ 	margin-right: 2rem
+ }
+ #headRight{
+ 	text-align: left;
+ 	font-family: sans-serif;
+ 	font-size: 14px;
+ 	color: #000;
+ 	width: 360px;
+ 	margin-top: 3rem;
+ }
+ #desing{ /*FRONTEND DEVELOPER*/
+ 	font-size: 18px;
+ 	margin-bottom: 1rem;
+ 	color: #dc143c;
+ }
+ #headRight h2{
+ 	margin-bottom: 0.5rem;
+ 	font-size: 24px;
+ }
+ #parrafo{
+ 	margin-bottom: 2rem;
+ }
+
+ /*About me*/
+
+ #aboutMe{
+ 	text-align: center;
+ 	padding: 4rem 3rem 4rem 3rem;
+ 	justify-content: space-between;
+ 	background: #121212;
+ } 
+ #aboutMe h3{
+ 	font-family: sans-serif;
+ 	color: #fff;
+ 	font-size: 22px;
+ }
+ .contLeft{
+ 	padding: 1rem 1rem;
+ 	text-align: left;
+ 	font-family: sans-serif;
+ 	width: 45%;
+ 	color: #fff;
+ }
+ .contRight{
+ 	width: 55%;
+ }
+ .contRight img{
+ 	width: 100%;
+ 	margin-left: 2rem;
+ 	border-radius: 20px;
+ }
+
+ /*Trabajos*/
+
+#black{
+	border: solid 2px #121212;
+}
+#works{
+	text-align: center;
+	padding: 4rem 3rem 4rem 3rem;
+}
+#works h3{
+	font-family: sans-serif;
+ 	color: #121212;
+ 	font-size: 24px;
+}
+
+/*Contacto*/
+
+#contact{
+	text-align: center;
+	background-color: #121212;
+	color: #fff;
+	padding: 4rem 3rem 4rem 3rem;
+	font-family: sans-serif;
+}
+
+#conFormGrid{
+	display: grid;
+	grid-template-columns: repeat(2,1fr); 
+	justify-content: center;
+	width: 60%;
+	margin-left: 12rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+}
+
+.input{
+	padding: 0.5rem;
+	margin: 0.5rem;
+	background-color: #333333;
+	border-style: none;
+	color: #fff;
+}
+
+#textarea{
+	grid-column: 1/3;
+	max-width: 516px;
+	min-width: 516px;
+
+	min-height: 60px;
+	max-height: 120px;
+}
+
+button{
+	border-style: none;
+	padding: 0.5rem 1.5rem;
+	border-radius: 20px;
+	background-color: #a5122f;
+	color: #fbfbfb;
+}
+button:hover{
+	background-color: #dc143c;
+}
+
+
+@media screen and (max-width: 800px){
+ 	
+ 	/*Header and barra de navegacion*/
+ 	#conHeader{
+ 		padding: 4rem;
+ 	}
+
+ 	#parrafo{
+ 		margin: 1rem 6rem;
+ 	}
+
+ 	#nav a{
+	 	margin-right: 1rem;
+	 	font-size: 10px;
+	 	padding: 0.3rem 1rem;
+	 	border-radius: 10px;
+ 	}
+
+ 	#headRight{
+ 	text-align: center;
+ 	width: 100%;
+ 	margin-top: 3rem;
+ }
+
+
+	.container{
+		display: block;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+
+	/*About me*/
+
+	.contLeft {
+    text-align: center;
+    width: 100%;
+	}
+
+	.contRight {
+    width: 90%;
+	}
+	.contRight img{
+	margin: 1rem 1rem;	
+	}
+
+	/*Services*/
+	.worksGrid {
+    margin: 0 0.5rem;
+    font-size: 12px;
+}
+
+	/*Contact us*/
+	#conFormGrid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    margin: 0;
+	}
+	#textarea {
+    max-width: 100%;
+    min-width: 80%;
+	}
+
+    .input{
+    	grid-column: 1/3;
+    	text-align: center;
+    }
+    #contact {
+    padding: 4rem 6rem 4rem 6rem;
+}
+}
+
+}
